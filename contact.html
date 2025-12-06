@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+</head>
+<body>
+
+    <!-- Top header: company name + navigation -->
+    <header>
+        
+        <h1>Swiss Valley Resort</h1>
+        
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+
+      
+        <!-- Main content area under the hero -->
+        <section id="contact">
+           
+            <h2>Contact Us</h2>
+
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                Required fields marked with a<span>*</span></p>
+                
+                <figure>
+                <img src="images/swiss-peak.jpg" alt="Photo of Swiss mountain peak">
+                </figure>
+                    
+        </section>         
+                    
+        
+            <form action=" https://wp.zybooks.com/form-viewer.php" method="post" id="contact-form">
+                            
+                <label for="name"><span>*</span>Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"><span>*</span>Email</label>
+                <input type="email" id="email" name="email" required>
+                                
+                <label for="phone"><span>*</span>Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+                <fieldset>
+                    <legend><span>*</span>Preferred Contact Method</legend>
+
+                        <div class="radio-group">
+                            <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                            <label for="contact-email">Email</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                            <label for="contact-phone">Phone</label>
+                        </div>
+                </fieldset>
+
+
+                <label for="comments"><span>*</span>Comments</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+                                                   
+            </form>
+    
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Swiss Valley Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+
+</body>
+</html>
